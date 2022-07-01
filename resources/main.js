@@ -10,6 +10,7 @@ $(function() {
             propertiesContentWrapper.html('');
             list.html('');
 
+            // nu ai nevoie sa creezi overlay-ul din js, acesta este corect sa existe deja in markup, nu sa il recreezi de fiecare data si apoi prin selectii doar sa ppopulezi informatiile dinamic
             let overLay = '<div class="overlay"><div class="overlay-content-wrapper"></div></div>';
             propertiesContentWrapper.append(overLay);
             
@@ -23,7 +24,7 @@ $(function() {
                 
                 propertiesContentWrapper.append(place);
                 list.append(listDates);
-              
+            //   ai foarte mult cod repetitiv, iar if else atat de mult ramificat de obicei nu este o solutie sustenabila
                     if($(place).hasClass('vases-container')) {
                         vases = $('.vases-container');
                         getPropertyHTML = function(propertyObj) {
