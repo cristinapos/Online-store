@@ -46,31 +46,7 @@ $(function() {
                             vases.append(propertyHTML);
 
                            
-                        } 
-                        // const galleryItems = $('.gallery-item');
-                        // const overlay = $('.overlay');
-
-                        //     galleryItems.click(function() {
-
-                        //         getPropertyHTML = function(propObj) {
-                        //             return `
-                        //                     <img src="assets/vases/${propObj.imgUrl}" class="img-wrapper"/>`;
-                        //         };
-                                
-                        //         for(let i = 0; i < products.vases.length; i++) {
-                        //             let propObj = products.vases[i],
-                        //             propHTML = getPropertyHTML(propObj);
-                        //             console.log(propHTML)
-                        //             $('.overlay').append(propHTML);
-        
-                        //         } 
-                        //         overlay.fadeIn();
-                        //     });
-
-                        //     overlay.click(function() {
-                        //         $(this).fadeOut();
-                        //     });
-                        
+                        }
                         
                     } else if($(place).hasClass('lamps-container')) {
                         lamps = $('.lamps-container');
