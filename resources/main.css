@@ -182,6 +182,7 @@ main {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -192,17 +193,29 @@ main {
     justify-content: space-between;
 }
 
-.overlay-content-wrapper i {
+/* .overlay-content-wrapper i {
     font-size: 70px;
     color: #fff;
     cursor: pointer;
+    width: 1em;
+    height: 1em;
+    display: inline;
+} */
+
+.icon-fontawesome-close::before {
+    content: "\f057";
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900;
+    font-size: 1em;
+    color: red;
+    display: inline-block;
 }
 
 .img-wrapper {
     width: 600px;
     height: 400px;
     /* background-color: #fff; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
